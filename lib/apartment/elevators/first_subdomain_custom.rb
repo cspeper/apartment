@@ -7,7 +7,7 @@ module Apartment
     # eg:
     #     - example1.domain.com               => example1
     #     - example2.something.domain.com     => example2
-    class FirstSubdomainCustom < Subdomain
+    class FirstSubdomainCustom < FirstSubdomain
 
       def parse_tenant_name(request)
         subdomain = super
