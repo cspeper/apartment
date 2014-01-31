@@ -1,4 +1,4 @@
-require 'apartment/elevators/subdomain'
+require 'apartment/elevators/first_subdomain'
 
 module Apartment
   module Elevators
