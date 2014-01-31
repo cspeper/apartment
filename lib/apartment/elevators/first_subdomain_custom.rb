@@ -12,7 +12,7 @@ module Apartment
       end
 
       def parse_tenant_name(request)
-        @subdomain_mapper.call(super(request))
+        @subdomain_mapper.call(super)
       end
     end
   end
