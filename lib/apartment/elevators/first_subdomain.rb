@@ -11,7 +11,7 @@ module Apartment
 
       def parse_tenant_name(request)
         subdomain = super
-        return nil if subdomain.empty?
+        return nil if subdomain.nil? or subdomain == ''
         subdomain.split('.')[0]
       end
     end
