@@ -11,8 +11,8 @@ module Apartment
         @processor = method(:parse_tenant_name)
       end
 
-      def parse_tenant_name(subdomain)
-        @subdomain_mapper.call(subdomain)
+      def parse_tenant_name(request)
+        @subdomain_mapper.call(super(request))
       end
     end
   end
